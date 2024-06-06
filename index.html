@@ -30,7 +30,7 @@
             <div>Measuring to ensure updates are a success</div>
             <div>And much more!</div>
           </div>
-          <form id="form">
+          <form id="form" novalidate>
             <label for="email">Email address</label>
             <input
               name="email"
@@ -50,6 +50,15 @@
           alt="illustration-sign-up-desktop"
         />
       </div>
+    </div>
+    <div class="success" style="display: none">
+      <img src="./assets/images/icon-success.svg" alt="icon-success" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to <span></span>. Please open it and
+        click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
     </div>
     <div class="attribution">
       Challenge by

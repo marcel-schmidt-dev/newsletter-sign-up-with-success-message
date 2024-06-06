@@ -59,17 +59,19 @@ body {
 }
 
 .container .center-box {
-    color: #242742;
     margin: 0 64px;
     max-width: 376px;
+    color: #242742;
     font-family: Roboto-Regular;
     font-size: 16px;
 }
 
-.center-box h2 {
+h2 {
     font-family: Roboto-Bold;
     font-size: 56px;
     margin-bottom: 24px;
+    font-size: 56px;
+    color: #242742;
 }
 
 .center-box p {
@@ -103,8 +105,12 @@ body {
     left: 0;
 }
 
+form {
+    position: relative;
+}
+
 form label {
-    font-family: Roboto-bold;
+    font-family: Roboto-Bold;
     font-size: 12px;
     line-height: 150%;
     display: block;
@@ -125,7 +131,7 @@ form input:focus-visible {
     border: 1px solid #242742;
 }
 
-form button {
+button {
     width: 100%;
     padding: 18px 0;
     background: #242742;
@@ -139,9 +145,47 @@ form button {
     border: none;
 }
 
-form button:hover {
+button:hover {
     background: linear-gradient(0deg, rgba(255, 82, 123, 1) 0%, rgba(255, 106, 58, 1) 100%);
     -webkit-box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
     -moz-box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+}
+
+.just-validate-error-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Roboto-Bold;
+    line-height: 150%;
+    font-size: 12px;
+    color: #FF6155 !important;
+}
+
+.just-validate-error-field {
+    background-color: #ff615526;
+    border: 1px solid #FF6155;
+    color: #FF6155
+}
+
+.success {
+    background-color: #fff;
+    border-radius: 36px;
+    padding: 64px;
+    max-width: 504px;
+}
+
+.success img {
+    padding-bottom: 40px;
+}
+
+.success p {
+    color: #242742;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.success p span {
+    font-family: Roboto-Bold;
 }
